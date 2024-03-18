@@ -1,0 +1,213 @@
+@charset 'UTF-8';
+
+/* Carrega as fontes externas */
+@font-face {
+    font-family: 'IDroid';
+    src: url('fontes/idroid.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fontes/BebasNeue-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root { /* Paleta de Cores */
+    --cor_01: #C0E8D6FF;
+    --cor_02: #7FDFABFF;
+    --cor_03: #36DB84FF;
+    --cor_04: #2CA862FF;
+    --cor_05: #053D1AFF;
+    --cor_06: #053D1AFF;
+    --cor_sombra: #0000005c;
+
+    --fonte_padrao: Arial, Helvitica, Verdana, sans-serif;
+    --fonte_destaque: 'BebasNeue', cursive;
+    --fonte_android: 'IDroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor_02);
+    font-family: var(--fonte_padrao);
+}
+
+/* ================== Estilos do header ================ */
+header {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor_04), var(--cor_05));
+    font-family: var(--fonte_destaque);
+}
+
+header h1 {
+    text-align: center;
+    font-weight: normal;
+    padding: 0px 10px 0px 10px;
+    text-shadow: 2px 2px 0px var(--cor_sombra);
+}
+
+header p {
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: var(--fonte_padrao);
+    text-shadow: 2px 2px 1px var(--cor_sombra);
+}
+
+/* ==================== Estilos do nav ================= */
+nav {
+    background-color: var(--cor_05);
+    padding: 5px;
+    box-shadow: 0px 7px 9px var(--cor_sombra);
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+nav a:hover {
+    background-color: var(--cor_04);
+    color: var(--cor_05);
+    transition-duration: 0.2s;
+}
+
+/* ==================== Estilos do main ================ */
+main h1 {
+    font-family: var(--fonte_android);
+    color: var(--cor_05);
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor_02), transparent);
+    color: var(--cor_05);
+    font-family: var(--fonte_android);
+    font-weight: normal;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main strong {
+    font-weight: bold;
+    color: var(--cor_04);
+}
+
+main a {
+    text-decoration: none;
+    padding: 2px 6px;
+    background-color: var(--cor_03);
+    color: var(--cor_05);
+
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor_04);
+}
+
+/* ================= Estilos do article ================ */
+article {
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px var(--cor_sombra);
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#bugdroid {
+    max-width: 300px;
+}
+
+div.video {
+    background-color: var(--cor_05);
+    padding: 10px;
+    margin: 0px -10px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* ================= Estilos do aside ================== */
+aside {
+    box-shadow: 3px 3px 6px var(--cor_sombra);
+    background-color: var(--cor_01);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+aside h3 {
+    color: white;
+    background-color: var(--cor_04);
+    padding: 10px;
+    margin: -10px -10px 0px -10px ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+
+/* ================== Estilos de footer ================ */
+footer {
+    background-color: var(--cor_04);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor_01);
+    text-decoration: underline;
+}
