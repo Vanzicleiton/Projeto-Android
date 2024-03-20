@@ -41,7 +41,7 @@ body {
 
 /* ================== Estilos do header ================ */
 header {
-    padding: 10px;
+    padding: 30px;
     color: white;
     background-image: linear-gradient(to bottom, var(--cor_04), var(--cor_05));
     font-family: var(--fonte_destaque);
@@ -74,7 +74,7 @@ nav {
 nav a {
     text-decoration: none;
     display: inline-block;
-    color: white;
+    color: var(--cor_01);
     padding: 5px;
     margin: 0px;
     font-weight: bold;
