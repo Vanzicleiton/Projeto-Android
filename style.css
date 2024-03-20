@@ -41,7 +41,7 @@ body {
 
 /* ================== Estilos do header ================ */
 header {
-    padding: 30px;
+    padding: 40px;
     color: white;
     background-image: linear-gradient(to bottom, var(--cor_04), var(--cor_05));
     font-family: var(--fonte_destaque);
@@ -51,7 +51,7 @@ header h1 {
     text-align: center;
     font-weight: normal;
     font-size: 2.7em;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
     text-shadow: 2px 2px 0px var(--cor_sombra);
 }
 
